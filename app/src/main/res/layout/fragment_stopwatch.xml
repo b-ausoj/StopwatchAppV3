@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    tools:context=".ui.stopwatch.StopwatchFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stopwatch_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        tools:listitem="@layout/stopwatch_row_item_small">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/start_all_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="32dp"
+        android:backgroundTint="@color/start"
+        android:contentDescription="@string/start_all"
+        android:src="@drawable/ic_start"
+        android:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_sw_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="32dp"
+        android:backgroundTint="@color/save"
+        android:contentDescription="@string/add_sw"
+        android:src="@drawable/ic_add"
+        android:tint="@color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

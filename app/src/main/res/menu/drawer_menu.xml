@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@id/stopwatchFragment"
+            android:icon="@drawable/ic_stopwatch"
+            android:title="@string/label_stopwatch" />
+        <item
+            android:id="@id/historyFragment"
+            android:icon="@drawable/ic_history"
+            android:title="@string/label_history" />
+        <item
+            android:id="@id/settingsFragment"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/label_settings" />
+    </group>
+</menu>

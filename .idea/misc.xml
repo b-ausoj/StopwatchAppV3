@@ -1,0 +1,50 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable-v24/delete_button.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable-v24/ic_add.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable-v24/ic_delete.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable-v24/ic_lap.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable-v24/ic_reset.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable-v24/ic_resume.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable-v24/save_button.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/delete_button.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/ic_add.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/ic_delete.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/ic_lap.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/ic_reset.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/ic_resume.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/ic_save.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/ic_start.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/ic_stop.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/lap_button.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/reset_button.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/reset_button_dis.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/reset_button_enabled.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/drawable/save_button.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/layout/fragment_history.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/layout/fragment_settings.xml" value="0.2171875" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/layout/fragment_stopwatch.xml" value="0.2171875" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/layout/fragment_test.xml" value="0.2171875" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/layout/history_row_item.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/layout/lap_row.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/layout/lap_row_item.xml" value="0.2171875" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/layout/saved_stopwatch_row_item.xml" value="0.3198458574181118" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/layout/stopwatch_row.xml" value="0.2171875" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/layout/stopwatch_row_item.xml" value="0.26878612716763006" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/menu/drawer_menu.xml" value="0.1" />
+        <entry key="..\:/Users/josua/AndroidStudioProjects/StopwatchAppV3/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

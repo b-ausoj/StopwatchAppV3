@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="8dp"
+        app:cardBackgroundColor="@color/card"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/stopwatch_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stopwatch #123"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@id/vertical_line"
+                app:layout_constraintEnd_toStartOf="@id/history_edit_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/history_edit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/save"
+                app:layout_constraintEnd_toStartOf="@id/stopwatch_date_tv"
+                app:layout_constraintStart_toEndOf="@id/stopwatch_name_tv"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/vertical_line"
+                app:srcCompat="@drawable/ic_edit"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/stopwatch_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:34, 12.06.2022"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@id/vertical_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/history_edit_btn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vertical_line"
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/history_edit_btn"
+                app:layout_constraintBottom_toTopOf="@id/history_share_btn"/>
+
+
+            <ImageView
+                android:id="@+id/history_save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/save"
+                app:layout_constraintBottom_toTopOf="@id/lapList_layout"
+                app:layout_constraintEnd_toStartOf="@id/history_share_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vertical_line"
+                app:srcCompat="@drawable/ic_save_alt"
+                app:tint="@color/black" />
+
+            <ImageView
+                android:id="@+id/history_share_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/share"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@id/lapList_layout"
+                app:layout_constraintEnd_toStartOf="@id/history_delete_btn"
+                app:layout_constraintStart_toEndOf="@id/history_save_btn"
+                app:layout_constraintTop_toBottomOf="@+id/vertical_line"
+                app:srcCompat="@drawable/ic_share"
+                app:tint="@color/black" />
+
+            <ImageView
+                android:id="@+id/history_delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/delete"
+                app:layout_constraintBottom_toTopOf="@id/lapList_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/history_share_btn"
+                app:layout_constraintTop_toBottomOf="@+id/vertical_line"
+                app:srcCompat="@drawable/ic_delete"
+                app:tint="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/lapList_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/history_share_btn">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Lap duration"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Time point"
+                        android:textColor="@color/text" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

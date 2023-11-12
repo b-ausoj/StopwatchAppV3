@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_sml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardViewLayout_sml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/time_tv_sml"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginTop="-6dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="00:10.0"
+                android:textColor="@color/text"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/start_stp_btn_sml"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lap_tv_sml"
+                android:layout_width="wrap_content"
+                android:layout_height="28sp"
+                android:layout_marginTop="-2dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="3. 00:10.0"
+                android:textColor="@color/text"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/time_tv_sml"
+                app:layout_constraintEnd_toEndOf="@id/time_tv_sml"
+                app:layout_constraintTop_toBottomOf="@id/time_tv_sml" />
+
+            <TextView
+                android:id="@+id/lst_lap_tv_sml"
+                android:layout_width="wrap_content"
+                android:layout_height="26sp"
+                android:layout_marginTop="-4dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="2. 00:04.3"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                android:textStyle=""
+                app:layout_constraintEnd_toEndOf="@id/time_tv_sml"
+                app:layout_constraintStart_toStartOf="@id/time_tv_sml"
+                app:layout_constraintTop_toBottomOf="@id/lap_tv_sml" />
+
+            <TextView
+                android:id="@+id/name_tv_sml"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/default_name"
+                android:textColor="@color/text"
+                android:textSize="24sp"
+                android:textStyle=""
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="@id/start_stp_btn_sml" />
+
+            <Button
+                android:id="@+id/rst_lap_btn_sml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/disable"
+                android:drawableLeft="@drawable/ic_reset"
+                android:paddingStart="6dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="8dp"
+                android:text="@string/reset"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/start_stp_btn_sml"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/name_tv_sml" />
+
+            <Button
+                android:id="@+id/start_stp_btn_sml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/start"
+                android:drawableLeft="@drawable/ic_start"
+                android:paddingStart="6dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="8dp"
+                android:text="@string/start"
+                android:hapticFeedbackEnabled="true"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/time_tv_sml"
+                app:layout_constraintEnd_toStartOf="@id/rst_lap_btn_sml"
+                app:layout_constraintTop_toBottomOf="@id/name_tv_sml" />
+
+            <ImageButton
+                android:id="@+id/thr_pnts_sml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@color/disable"
+                android:src="@drawable/ic_edit" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

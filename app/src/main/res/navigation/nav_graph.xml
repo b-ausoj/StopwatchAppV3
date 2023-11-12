@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/stopwatchFragment">
+    <!-- These are the destinations in the app, the actions are only recommendation and not used -->
+    <fragment
+        android:id="@+id/stopwatchFragment"
+        android:name="com.example.stopwatchappv3.ui.stopwatch.StopwatchFragment"
+        android:label="@string/label_stopwatch"
+        tools:layout="@layout/fragment_stopwatch" >
+        <action
+            android:id="@+id/action_stopwatchFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_stopwatchFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.stopwatchappv3.ui.history.HistoryFragment"
+        android:label="@string/label_history"
+        tools:layout="@layout/fragment_history">
+        <action
+            android:id="@+id/action_historyFragment_to_stopwatchFragment"
+            app:destination="@id/stopwatchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.stopwatchappv3.ui.settings.SettingsFragment"
+        android:label="@string/label_settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_stopwatchFragment"
+            app:destination="@id/stopwatchFragment" />
+    </fragment>
+
+</navigation>
